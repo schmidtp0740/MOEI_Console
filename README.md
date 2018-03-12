@@ -17,11 +17,12 @@ $ npm start
 ### Setting up Spoofed IOT device
 
 #### Prereqs
- - have Golang installed
+ - have docker installed
 
 #### Setup
 ```
 $ git clone https://github.com/schmidtp0740/MOEI_Generator
 $ cd MOEI_Generator
-$ go run main.go
+$ docker build -t goiotapp .
+$ docker run -it --name goiotapp goiotapp
 ```
