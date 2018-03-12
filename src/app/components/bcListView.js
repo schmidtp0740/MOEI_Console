@@ -77,8 +77,7 @@ class BlockFeed extends React.Component {
                   title={item.Value.docType}
                   description={"Timestamp: " + (new Date(item.Timestamp).toLocaleString())}
                 />
-                <div>{"Heart Rate: " + item.Value.heartRate}</div>
-                <div>{"Unit: " + item.Value.unit}</div>
+                <div>{"Heart Rate: " + item.Value.heartRate + " " + item.Value.unit}</div>
               </List.Item>
             )}
           >
