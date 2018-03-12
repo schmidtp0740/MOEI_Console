@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const url = 'http://129.146.106.151:4001/bcsgw/rest/v1/transaction/query';
+const url = 'http://129.146.106.151:8000/getData';
 export async function getAllData(){
   console.log(url);  
   return axios.get(url)
