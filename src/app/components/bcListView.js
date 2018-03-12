@@ -73,7 +73,7 @@ class BlockFeed extends React.Component {
             renderItem={item => (
               <List.Item key={item.ID}>
                 <List.Item.Meta
-                  avatar={<Avatar shape="square" size="large" style={item.Status === 'prescribed' ? { backgroundColor: '#D1B829'} : { backgroundColor: '#307351'}} icon={item.Status === 'prescribed' ? 'solution' : 'medicine-box'} />}
+                  avatar={<Avatar shape="square" size="large" style={{ backgroundColor: '#e00000'}} icon={'heart-o'} />}
                   title={item.Value.docType}
                   description={"Timestamp: " + (new Date(item.Timestamp).toLocaleString())}
                 />
