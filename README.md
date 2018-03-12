@@ -1,7 +1,7 @@
 # MOEI Console
 
 ## Prereqs
-- have node installed
+- have docker installed
 
 ## Setup
 ```
@@ -17,8 +17,6 @@ $ docker run -d -p 3000:3000 --name react --restart always react
 
 ### Setting up Spoofed IOT device
 
-#### Prereqs
- - have docker installed
 
 #### Setup
 ```
