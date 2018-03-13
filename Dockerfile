@@ -1,11 +1,8 @@
 FROM node:8.2.1-alpine
 
-WORKDIR /usr/src/app
-
-
-COPY package*.json ./
-RUN npm install
+WORKDIR /src/reactapp/
 
 COPY . .
+RUN npm install
 
 CMD ["npm", "start"]
