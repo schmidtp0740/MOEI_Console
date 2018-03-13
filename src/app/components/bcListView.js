@@ -74,7 +74,7 @@ class BlockFeed extends React.Component {
               <List.Item key={item.ID}>
                 <List.Item.Meta
                   avatar={<Avatar shape="square" size="large" style={{ backgroundColor: '#e00000'}} icon={'heart-o'} />}
-                  title={item.Value.docType}
+                  title={"Heart Rate for ID: "+item.Value.id}
                   description={"Timestamp: " + (new Date(item.Timestamp).toLocaleString())}
                 />
                 <div>{"Heart Rate: " + item.Value.heartRate + " " + item.Value.unit}</div>
